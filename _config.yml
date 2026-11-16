@@ -1,0 +1,27 @@
+# Site settings. Edit these values to change the name and links on every page.
+title: Caroline Moore
+headline: Product engineer who designs, builds, and tests physical products.
+description: Portfolio of hardware and product engineering projects by Caroline Moore.
+email: you@example.com
+linkedin: https://www.linkedin.com/in/your-profile
+resume: /assets/resume.pdf
+
+# If the site is at https://username.github.io, keep baseurl empty.
+baseurl: ""
+
+# Each file in _projects/ becomes a page at /projects/<file-name>/.
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+markdown: kramdown
+exclude:
+  - README.md

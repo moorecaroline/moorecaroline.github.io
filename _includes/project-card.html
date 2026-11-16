@@ -1,0 +1,10 @@
+<!-- One project card. The home page uses this file for each project. -->
+<a class="card reveal" href="{{ project.url | relative_url }}">
+  <div class="card-img"><img src="{{ project.image | relative_url }}" alt="{{ project.title }}" loading="lazy"></div>
+  <div class="card-body">
+    <p class="meta">{{ project.timeline }}{% if project.status %} · <span class="status">{{ project.status }}</span>{% endif %}</p>
+    <h3>{{ project.title }}</h3>
+    <p class="muted">{{ project.summary }}</p>
+    <ul class="tags">{% for tool in project.tools %}<li>{{ tool }}</li>{% endfor %}</ul>
+  </div>
+</a>

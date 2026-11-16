@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<!-- Project case study page. The values come from the front matter of each file in _projects/. -->
+<article class="project wrap">
+  <a class="back" href="{{ '/#work' | relative_url }}">← All projects</a>
+  <header class="project-head">
+    <p class="eyebrow">{% if page.category == "personal" %}Personal project{% else %}College project{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="lede">{{ page.summary }}</p>
+  </header>
+
+  <dl class="specs">
+    <div><dt>Role</dt><dd>{{ page.role }}</dd></div>
+    <div><dt>Team</dt><dd>{{ page.team }}</dd></div>
+    <div><dt>Timeline</dt><dd>{{ page.timeline }}</dd></div>
+    <div><dt>Tools</dt><dd>{% for tool in page.tools %}<span class="chip">{{ tool }}</span>{% endfor %}</dd></div>
+  </dl>
+
+  <figure class="project-hero"><img src="{{ page.image | relative_url }}" alt="{{ page.title }}"></figure>
+
+  {% if page.results %}
+  <ul class="results">
+    {% for r in page.results %}<li><strong>{{ r.value }}</strong><span>{{ r.label }}</span></li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>

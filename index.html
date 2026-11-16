@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<!-- Home page. Projects appear automatically from the _projects/ folder. -->
+<section class="hero wrap">
+  <p class="eyebrow">Product Engineering · Product Management</p>
+  <h1>Hi, I'm {{ site.title }}.<br><span class="accent">{{ site.headline }}</span></h1>
+  <p class="lede muted">I turn user problems into working prototypes: from sketches and CAD to the shop floor and test bench.</p>
+  <div class="hero-actions">
+    <a class="btn" href="#work">View projects</a>
+    <a class="btn btn-ghost" href="{{ site.resume | relative_url }}">Download résumé</a>
+  </div>
+</section>
+
+<section class="section wrap" id="work">
+  <div class="section-head">
+    <h2>Selected work</h2>
+    <p class="muted">Engineering projects from my time at Dartmouth.</p>
+  </div>
+  <div class="grid">
+    {% for project in site.projects %}{% if project.category == "college" %}
+      {% include project-card.html %}
+    {% endif %}{% endfor %}
+  </div>
+</section>
+
+<section class="section wrap" id="personal">
+  <div class="section-head">
+    <h2>Personal projects</h2>
+    <p class="muted">Things I'm building on my own time. Updated as they progress.</p>
+  </div>
+  <div class="grid">
+    {% for project in site.projects %}{% if project.category == "personal" %}
+      {% include project-card.html %}
+    {% endif %}{% endfor %}
+  </div>
+</section>
+
+<section class="section wrap about-strip reveal">
+  <div>
+    <p class="eyebrow">About</p>
+    <h2>Engineer by training, product thinker by habit.</h2>
+  </div>
+  <div>
+    <p>Replace this with 2–3 sentences about you: your degree, what kinds of products you like to build, and what you're looking for next.</p>
+    <a class="link" href="{{ '/about/' | relative_url }}">More about me →</a>
+  </div>
+</section>

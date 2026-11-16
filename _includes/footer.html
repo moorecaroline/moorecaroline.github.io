@@ -1,0 +1,16 @@
+<!-- Shared footer. The contact links come from _config.yml. -->
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Let's build something.</h2>
+      <p class="muted">Open to product engineering and product management roles.</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a href="{{ site.linkedin }}">LinkedIn</a>
+      <a href="{{ site.resume | relative_url }}">Résumé (PDF)</a>
+    </div>
+  </div>
+  <div class="wrap footer-base muted">© {{ site.title }}</div>
+</footer>
