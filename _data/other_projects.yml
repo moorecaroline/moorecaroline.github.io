@@ -1,0 +1,22 @@
+# Other projects. Each item shows as one row on the home page.
+# Add a project: copy one item, then change the values.
+- title: Enigma Machine
+  course: ENGS 31 · Digital Electronics
+  summary: "TODO: one line about the project."
+  tags: [Digital logic, Hardware]
+- title: Trussworthy Bridge
+  course: ENGS 33 · Solid Mechanics
+  summary: "TODO: one line about the project."
+  tags: [Structural analysis, Load testing]
+- title: Eras Tour Economic Impact
+  course: ENGS 18 · System Dynamics in Policy Design
+  summary: A system dynamics model of the economic impact of Taylor Swift's Eras Tour.
+  tags: [System dynamics, Modeling]
+- title: Design Thinking projects
+  course: Design Thinking course
+  summary: Five short design challenges, including Wild Ride, Carrying Devices, and Digital Dreams 2030.
+  tags: [Design thinking, Rapid prototyping]
+- title: "TODO: Materials project"
+  course: "TODO: course"
+  summary: "TODO: one line, for example how material choice affects product performance."
+  tags: [Materials, Testing]

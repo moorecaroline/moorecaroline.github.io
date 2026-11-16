@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 480">
+<defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#c9d6e3" stroke-width="0.6"/></pattern>
+<pattern id="G" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M100 0H0V100" fill="none" stroke="#b3c4d6" stroke-width="1"/></pattern></defs>
+<rect width="700" height="480" fill="#eef3f8"/><rect width="700" height="480" fill="url(#g)"/><rect width="700" height="480" fill="url(#G)"/>
+<g fill="none" stroke="#1f3a5f" stroke-width="3" stroke-linejoin="round"><circle cx="270" cy="330" r="45"/><circle cx="430" cy="330" r="45"/><path d="M270 330 l50 -85 h80 l30 85 M320 245 l40 85 l40 -85 M300 230 h40 M395 230 h25"/><path d="M200 170 a50 50 0 0 1 80 -20 M500 170 a50 50 0 0 0 -80 -20" stroke-dasharray="5 6"/><path d="M276 146 l8 6 l-10 4 M424 146 l-8 6 l10 4"/></g>
+<text x="24" y="456" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#5a7391">FIG. 03 — REPLACE WITH PROJECT PHOTO</text>
+</svg>

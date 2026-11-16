@@ -24,6 +24,26 @@ layout: default
   </div>
 </section>
 
+<section class="section wrap" id="other">
+  <div class="section-head">
+    <h2>Other projects</h2>
+    <p class="muted">More coursework across engineering, systems, and design.</p>
+  </div>
+  <!-- The rows come from _data/other_projects.yml. -->
+  <ul class="other-list">
+    {% for item in site.data.other_projects %}
+    <li class="other-row reveal">
+      <div class="other-main">
+        <h3>{{ item.title }}</h3>
+        <p class="muted">{{ item.summary }}</p>
+      </div>
+      <p class="meta">{{ item.course }}</p>
+      <ul class="tags">{% for tag in item.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
 <section class="section wrap" id="personal">
   <div class="section-head">
     <h2>Personal projects</h2>

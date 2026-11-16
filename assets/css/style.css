@@ -71,6 +71,13 @@ h3 { font-size: 1.2rem; }
 .about-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
 .link { color: var(--accent); font-weight: 600; text-decoration: none; }
 
+/* Other projects list */
+.other-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
+.other-row { display: grid; grid-template-columns: 2fr 1fr 1.2fr; gap: 24px; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.other-row h3 { margin: 0 0 .2em; font-size: 1.05rem; }
+.other-row p.muted { margin: 0; font-size: .92rem; }
+.other-row .meta { margin: 0; }
+
 /* Project page */
 .project { padding-top: 48px; padding-bottom: 80px; }
 .back { font-family: var(--mono); font-size: .8rem; text-decoration: none; color: var(--muted); }
@@ -114,6 +121,7 @@ h3 { font-size: 1.2rem; }
   .about-strip { grid-template-columns: 1fr; gap: 8px; }
   .specs { grid-template-columns: 1fr 1fr; }
   .grid { grid-template-columns: 1fr; }
+  .other-row { grid-template-columns: 1fr; gap: 8px; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
