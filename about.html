@@ -2,20 +2,58 @@
 layout: default
 title: About
 ---
-<section class="wrap narrow page">
-<p class="eyebrow">About</p>
-<h1>About me</h1>
+<!-- About page. Edit the text here. The photo is assets/images/caroline-moore.jpg. -->
+<section class="wrap page about">
+  <figure class="about-photo">
+    <img src="{{ '/assets/images/caroline-moore.jpg' | relative_url }}" alt="Portrait of Caroline Moore">
+  </figure>
 
-<p class="lede">Replace this with a short introduction: who you are and what you do.</p>
+  <div class="about-text">
+    <p class="eyebrow">About</p>
+    <h1>Hi, I'm Caroline.</h1>
+    <p class="lede">I'm a product manager with an engineering background, originally from Santa Fe, New Mexico. I like working where people, products, and systems meet.</p>
 
-<p>Write a few short paragraphs here. Cover your background, the kind of problems you like to solve, and what you want to do next. Keep it personal but professional.</p>
+    <p>Today I'm a product manager at a healthcare technology company. I lead user research and help define product priorities. I manage our Jira boards and keep developers and operations aligned, so that the team builds the right thing and ships it well.</p>
 
-<h2>Skills</h2>
-<ul class="tags big">
-  <li>SolidWorks</li><li>Fusion 360</li><li>3D printing</li><li>Machining</li>
-  <li>Arduino</li><li>MATLAB</li><li>DFM</li><li>User research</li><li>Requirements</li>
-</ul>
+    <p>I studied engineering at Dartmouth, where I earned an A.B. in Engineering Sciences with a minor in Human-Centered Design and a B.E. in Mechanical Engineering with a focus on product design. That training still shapes how I work. I start with the people who will use something, then work through the details that make it real, from CAD and prototypes to models and testing.</p>
 
-<h2>Education</h2>
-<p><strong>Dartmouth College</strong> — B.E. / A.B. Engineering Sciences, 2026</p>
+    <h2>Experience</h2>
+    <ul class="about-list">
+      <li>
+        <strong>Product Manager, healthcare technology company</strong>
+        <span>User research, product prioritization, Jira board management, and coordination between development and operations teams.</span>
+      </li>
+    </ul>
+
+    <h2>Leadership</h2>
+    <ul class="about-list">
+      <li>
+        <strong>Co-President, AISES at Dartmouth</strong>
+        <span>Led the chapter's mentoring and community programs, including panels, dinners, and tutoring. We aimed to send six students to the AISES National Conference each year.</span>
+      </li>
+      <li>
+        <strong>Treasurer and Co-Social Chair, Native Americans at Dartmouth</strong>
+        <span>Managed the budget and all funding sources for the group's events, including Indigenous Peoples' Day, Missing and Murdered Indigenous Women (MMIW) awareness, and Orange Shirt Day.</span>
+      </li>
+    </ul>
+
+    <h2>Outside of work</h2>
+    <p>I love athletics, especially volleyball. I played with Dartslam, a coed club team at Dartmouth. I also golf and ski. When I'm not on a court or a slope, I'm usually making something by hand: sewing or crocheting.</p>
+
+    <h2>Skills</h2>
+    <ul class="tags big">
+      <li>Product management</li><li>User research</li><li>Prioritization</li><li>Jira</li><li>Cross-functional communication</li>
+      <li>CAD</li><li>Prototyping</li><li>Structural design</li><li>Design for Environment</li>
+      <li>Deterministic modeling</li><li>System dynamics</li><li>User testing</li><li>Human-centered design</li>
+    </ul>
+
+    <h2>Education</h2>
+    <p><strong>Dartmouth College</strong>, Class of 2026<br>
+    <span class="muted">A.B. Engineering Sciences, minor in Human-Centered Design<br>B.E. Mechanical Engineering (Product Design)</span></p>
+
+    <div class="hero-actions">
+      <a class="btn" href="mailto:{{ site.email }}">Email me</a>
+      <a class="btn btn-ghost" href="{{ site.linkedin }}">LinkedIn</a>
+    </div>
+  </div>
 </section>
